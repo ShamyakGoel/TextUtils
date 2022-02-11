@@ -1,16 +1,16 @@
 import './App.css';
 import React, { useState , useEffect} from 'react';
-import About from './components/About';
+// import About from './components/About';
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
 import Alert from './components/Alert';
 
-import {
-    BrowserRouter as Router,
-    Routes,
-    Route,
-  } from "react-router-dom";
-import Notfound from './components/Notfound';
+// import {
+//     BrowserRouter as Router,
+//     Routes,
+//     Route,
+//   } from "react-router-dom";
+// import Notfound from './components/Notfound';
 function App() {
   const [location, setlocation] = useState(0)
   useEffect(() => {
@@ -55,16 +55,17 @@ function App() {
   }
   return (
     <>
-        <Router>
+        {/* <Router> */}
           <Navbar title="TextUtils" mode={mode} toggleMode={toggleMode}/> 
         <Alert alert={alert}/>
 
-            <Routes>
-                <Route exact path="/" element={<TextForm heading="Enter the text to analyze" mode={mode} alert={showAlert}/>}/>
+            {/* <Routes> */}
+                {/* <Route exact path="/" element={<TextForm heading="Enter the text to analyze" mode={mode} alert={showAlert}/>}/>
                 <Route exact path="/about" element={<About></About>}/>
-                <Route path="*" element={<Notfound/>}/>
-            </Routes>
-        </Router>
+                <Route path="*" element={<Notfound/>}/> */}
+                <TextForm heading="Enter the text to analyze" mode={mode} alert={showAlert}/>
+            {/* </Routes> */}
+        {/* </Router> */}
         <div className="container my-3">
         {/* <About/> */}
         </div>

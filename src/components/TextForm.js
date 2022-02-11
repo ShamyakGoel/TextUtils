@@ -50,9 +50,6 @@ export default function TextForm(props) {
     }
     const handleExtraSpaces = ()=>{
         let newText = text.split(/[ ]+/)
-        if(text === newText.join(" ")){
-            props.alert("Can't remove extra spaces. The text has no extra spaces.", "danger", "Error")
-        }
         setText(newText.join(" "))
         props.alert("Extra Spaces removed", "success", "Success")
     }
@@ -79,6 +76,7 @@ export default function TextForm(props) {
         setText(document.getElementById("myBox").value)
         if(text.toUpperCase() === text){
             props.alert("Can't convert to uppercase. The text is already in uppercase.", "danger", "Error")
+            return
         }
         let newText = text.toUpperCase()
         setText(newText)
@@ -89,7 +87,9 @@ export default function TextForm(props) {
         setText(document.getElementById("myBox").value)
         if(text.toLowerCase() === text){
             props.alert("Can't convert to lowercase. The text is already in lowercase.", "danger", "Error")
+            return
         }
+        props.alert("Converted to lowercase", "success", "Success")
         let newText = text.toLowerCase()
         setText(newText)
     }
