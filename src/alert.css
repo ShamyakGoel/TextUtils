@@ -1,0 +1,16 @@
+.alert{
+    /* display: flex; */
+    text-align: left;
+    display: inline-flex;
+    width: 100%;
+    background-color: antiquewhite;
+}
+.white{
+    background-color: white;
+}
+.grey{
+    opacity: 0.5;
+}
+.inline{
+    display: inline;
+}
