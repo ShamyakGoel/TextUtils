@@ -6,7 +6,7 @@ Textutils have following features :-
 * Saving text to memory (browser cache)
 * Restoring text from memory (browser cache)
 * Restoring text from a file (any extension except executable files.)
-* Saving text to file (in development)
+* Saving text to file (.txt extension)
 * Removing extra spaces from text
 * Copying text
 * Clearing text
