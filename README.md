@@ -1,4 +1,4 @@
-# Welcome to the TextUtils wiki!
+# Welcome to the TextUtils!
 ### Textutils is my attempt to reduce time in formatting sentences and paragraphs.
 Textutils have following features :-
 * Converting text to uppercase
