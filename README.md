@@ -10,3 +10,4 @@ Textutils have following features :-
 * Removing extra spaces from text
 * Copying text
 * Clearing text
+* Toggling text
